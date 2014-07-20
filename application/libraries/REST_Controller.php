@@ -3,7 +3,8 @@
 /**
  * CodeIgniter Rest Controller
  *
- * A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller.
+ * A fully RESTful server implementation for CodeIgniter
+ * using one library, one config file and one controller.
  *
  * @package        	CodeIgniter
  * @subpackage    	Libraries
@@ -11,7 +12,7 @@
  * @author        	Phil Sturgeon, Chris Kacerguis
  * @license         http://philsturgeon.co.uk/code/dbad-license
  * @link			https://github.com/philsturgeon/codeigniter-restserver
- * @version         3.0.0-pre
+ * @release         3.0.0-pre
  */
 abstract class REST_Controller extends CI_Controller
 {
@@ -523,6 +524,9 @@ abstract class REST_Controller extends CI_Controller
      *
      * Detect whether SSL is being used or not
      */
+    /**
+     * @return bool
+     */
     protected function _detect_ssl()
     {
             return (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on");
@@ -533,6 +537,9 @@ abstract class REST_Controller extends CI_Controller
      * Detect input format
      *
      * Detect which format the HTTP Body is provided in
+     */
+    /**
+     * @return int|null|string
      */
     protected function _detect_input_format()
     {
