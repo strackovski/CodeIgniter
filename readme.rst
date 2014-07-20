@@ -24,33 +24,35 @@ Installation and usage
 **********************
 
 Modify your project's composer.json file to include data bellow:
+::
 
-{
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "nv/codeigniter",
-                "version": "2.2.0",
-                "dist": {
-                    "url": "https://github.com/strackovski/CodeIgniter/archive/2.2-stable.zip",
-                    "type": "zip"
-                },
-                "source": {
-                    "url": "https://github.com/strackovski/CodeIgniter",
-                    "type": "git",
-                    "reference": "2.2-stable"
+    {
+        "repositories": [
+            {
+                "type": "package",
+                "package": {
+                    "name": "nv/codeigniter",
+                    "version": "2.2.0",
+                    "dist": {
+                        "url": "https://github.com/strackovski/CodeIgniter/archive/2.2-stable.zip",
+                        "type": "zip"
+                    },
+                    "source": {
+                        "url": "https://github.com/strackovski/CodeIgniter",
+                        "type": "git",
+                        "reference": "2.2-stable"
+                    }
                 }
             }
-        }
-    ]
-}
+        ]
+    }
 
 Add the following package to the list of required packages in your project's composer.json file
+::
 
-"require": {
-    "nv/codeigniter": "2.2.*"
-}
+    "require": {
+        "nv/codeigniter": "2.2.*"
+    }
 
 After running composer install copy the index.dist.php from the package directory to
 your project root and rename it to index.php.
