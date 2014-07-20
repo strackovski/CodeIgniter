@@ -1,0 +1,30 @@
+{
+    "name": "nv/codeigniter",
+    "version": "2.2.0",
+    "type": "project",
+    "homepage": "http://www.nv3.org",
+    "description": "A fork of the popular CodeIgniter PHP framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimir Stračkovski",
+            "email": "vlado@nv3.org",
+            "homepage": "http://www.nv3.org"
+        }
+    ],
+    "support": {
+        "email": "vlado@nv3.org"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "twig/twig":"1.*",
+        "twig/extensions": "~1.0",
+        "rych/phpass": "dev-develop",
+        "twitter/bootstrap": "3.2.0",
+        "kriswallsmith/assetic": "1.2.*@dev",
+        "lmammino/jsmin4assetic": "1.0.*",
+        "patchwork/jsqueeze": "dev-master",
+        "natxet/CssMin": "dev-master"
+    }
+}
