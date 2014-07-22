@@ -42,7 +42,7 @@ class Doctrine
 
         if (file_exists(FCPATH . 'config/database.php')) {
             include FCPATH . 'config/database.php';
-        } elseif (file_exists(APPPATH . 'config/database.php')) {
+        } elseif (file_exists(FCPATH . 'config/database.php')) {
             include APPPATH . 'config/database.php';
         } else {
             throw new Exception('Failed retrieving database configuration.');
@@ -75,7 +75,7 @@ class Doctrine
         $config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $this->devMode, $proxies_dir);
         $this->em = EntityManager::create($connection_options, $config);
 
-        $commonLoader = new ClassLoader('nv', SRCPATH);
+        $commonLoader = new ClassLoader('nv\\', SRCPATH);
         $commonLoader->register();
     }
 }
