@@ -37,9 +37,7 @@ class NV_Loader extends CI_Loader
         if (defined('ENVIRONMENT') AND file_exists(FCPATH.'config/'.ENVIRONMENT.'/autoload.php')) {
             include FCPATH.'config/'.ENVIRONMENT.'/autoload.php';
         } else {
-            if (file_exists(FCPATH.'config/'.ENVIRONMENT.'/autoload.php')) {
-                include FCPATH.'config/'.ENVIRONMENT.'/autoload.php';
-            } elseif (file_exists(FCPATH.'config/autoload.php')) {
+            if (file_exists(FCPATH.'config/autoload.php')) {
                 include FCPATH.'config/autoload.php';
             } else {
                 include APPPATH.'config/autoload.php';
