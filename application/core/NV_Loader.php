@@ -32,7 +32,7 @@ class NV_Loader extends CI_Loader
      * @note    Added more directories to search for config [nv]
      * @return	void
      */
-    private function _ci_autoloader()
+    protected function _ci_autoloader()
     {
         if (defined('ENVIRONMENT') AND file_exists(FCPATH.'config/'.ENVIRONMENT.'/autoload.php')) {
             include FCPATH.'config/'.ENVIRONMENT.'/autoload.php';
