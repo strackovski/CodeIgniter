@@ -1107,11 +1107,12 @@ class CI_Loader {
 	 *
 	 * The config/autoload.php file contains an array that permits sub-systems,
 	 * libraries, and helpers to be loaded automatically.
-	 *
+     *
+     * @comment Changed method accessibility to protected to allow overriding, V. Stračkovski
 	 * @param	array
 	 * @return	void
 	 */
-	private function _ci_autoloader()
+	protected function _ci_autoloader()
 	{
 		if (defined('ENVIRONMENT') AND file_exists(APPPATH.'config/'.ENVIRONMENT.'/autoload.php'))
 		{
