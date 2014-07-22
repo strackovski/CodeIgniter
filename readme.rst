@@ -4,7 +4,7 @@ About this fork
 
 Customized CodeIgniter web application framework used by some of my web
 projects. To use this you will also need the `nv web project skeleton
-<http://github.com/strackovski/>`_.
+<http://github.com/strackovski/app-skeleton>`_.
 
 CodeIgniter is an Application Development Framework - a toolkit - for people
 who build web sites using PHP. `Read more about it
@@ -73,8 +73,8 @@ Server Requirements
 License
 *******
 
-This project is based on the CodeIgniter web application framework. For the original
-CodeIgniter license please see the `license
+This project is based on the CodeIgniter web application framework. For the CodeIgniter
+license please see the licese file provided  with this project or read the `license
 agreement <http://ellislab.com/codeigniter/user-guide/license.html>`_ on their page.
 
 All changes of the original project are released under the license specified in this
