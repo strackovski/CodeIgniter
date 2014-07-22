@@ -69,13 +69,13 @@ class Doctrine
 
         $proxies_dir      =  FCPATH . 'var/cache/orm/proxy';
         $metadata_paths   = array(
-            FCPATH . SRCPATH . 'Model/Entity'
+            SRCPATH . 'Model/Entity'
         );
 
         $config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $this->devMode, $proxies_dir);
         $this->em = EntityManager::create($connection_options, $config);
 
-        $commonLoader = new ClassLoader('nv', FCPATH . SRCPATH);
+        $commonLoader = new ClassLoader('nv', SRCPATH);
         $commonLoader->register();
     }
 }
