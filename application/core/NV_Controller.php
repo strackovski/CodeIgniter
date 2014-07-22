@@ -21,6 +21,13 @@
  * @subpackage Core_Extensions
  * @author     Vladimir Stračkovski <vlado@nv3.org>
  * @link       https://github.com/strackovski/CodeIgniter
+ *
+ * @property   CI_Loader $load
+ * @property   CI_Config $config
+ * @property   NV_Lang $lang
+ * @property   CI_Session $session
+ * @property   Doctrine $doctrine
+ * @property   Twig $twig
  */
 class NV_Controller extends CI_Controller
 {
@@ -30,8 +37,14 @@ class NV_Controller extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        //$this->em = $this->doctrine->em;
-        //$this->lang->load($this->lang->lang());
+
+        if ($this->config->item('enable_orm')) {
+            $this->em = $this->doctrine->em;
+        }
+
+        if ($this->config->item('multilingual_ui')) {
+            $this->lang->load($this->lang->lang());
+        }
     }
 
     /**
