@@ -42,7 +42,7 @@ class Doctrine
 
         if (file_exists(FCPATH . 'config/database.php')) {
             include FCPATH . 'config/database.php';
-        } elseif (file_exists(FCPATH . 'config/database.php')) {
+        } elseif (file_exists(APPPATH . 'config/database.php')) {
             include APPPATH . 'config/database.php';
         } else {
             throw new Exception('Failed retrieving database configuration.');
