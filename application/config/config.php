@@ -357,6 +357,44 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+/*
+|--------------------------------------------------------------------------
+| Use Database (added by nv)
+|--------------------------------------------------------------------------
+|
+| To enable database use, this flag must be set to true. This is used when
+| configuring the application for the first time.
+|
+*/
+$config['enable_db'] = true;
+
+/*
+|--------------------------------------------------------------------------
+| Use Object-relational Mapping (added by nv)
+|--------------------------------------------------------------------------
+|
+| To use an object relational mapper (ORM), this flag must be set to true.
+| The supported ORM for this skeleton is Doctrine.
+|
+*/
+$config['enable_orm'] = true;
+
+/*
+|--------------------------------------------------------------------------
+| Enable Multilingual User Interface (added by nv)
+|--------------------------------------------------------------------------
+|
+| This flag defines whether to enable user interface (UI) translations. The
+| skeleton provides the most common UI translations for a few languages,
+| and anyone can extend the list. When set to true, the language library
+| will replace the original words with appropriate translations. The mapping
+| is defined in the documentation.
+|
+| Use for UI translations ONLY! This is NOT for content translation. See
+| other tools for that (like Doctrine Translatable extensions if you use ORM).
+|
+*/
+$config['multilingual_ui'] = true;
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
