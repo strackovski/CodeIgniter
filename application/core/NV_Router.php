@@ -14,7 +14,8 @@
  * NV Router Class
  *
  * Extends the default CI_Router class to add support for custom controller
- * directories.
+ * directories._validate_request now includes more directories to look for
+ * controllers.
  *
  * @category   Router
  * @package    CodeIgniter

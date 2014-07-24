@@ -14,9 +14,9 @@
  * NV Controller
  *
  * Extend this controller to get access to entity manager, language extensions
- * XML content retriever for static pages, and some more common functions.
+ * and XML content retriever for static pages.
  *
- * @category   Router
+ * @category   Controller
  * @package    CodeIgniter
  * @subpackage Core_Extensions
  * @author     Vladimir Stračkovski <vlado@nv3.org>
@@ -26,6 +26,7 @@
  * @property   CI_Config $config
  * @property   NV_Lang $lang
  * @property   CI_Session $session
+ * @property   \Doctrine\ORM\EntityManager $em
  * @property   Doctrine $doctrine
  * @property   Twig $twig
  */
@@ -97,7 +98,7 @@ class NV_Controller extends CI_Controller
      *
      * return array
      */
-    protected function xml2array ( $xmlObject, $out = array () )
+    protected function xml2array ($xmlObject, $out = array ())
     {
         foreach ((array) $xmlObject as $index => $node) {
             $out[$index] = (is_object($node)) ? $this->xml2array($node) : $node;
