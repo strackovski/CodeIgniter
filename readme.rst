@@ -55,7 +55,8 @@ Add the following package to the list of required packages in your project's com
     }
 
 After running composer install copy the index.dist.php from the package directory to
-your project root and rename it to index.php.
+your project root and rename it to index.php (or whatever filename you set as the front
+controller).
 
 *******************
 Release Information
@@ -73,9 +74,9 @@ Server Requirements
 License
 *******
 
-This project is based on the CodeIgniter web application framework. For the CodeIgniter
-license please see the licese file provided  with this project or read the `license
-agreement <http://ellislab.com/codeigniter/user-guide/license.html>`_ on their page.
+This is a fork of the popular CodeIgniter web application framework. For the CodeIgniter
+license please see the licese file provided with this project or read the `license agreement <http://ellislab.com/codeigniter/user-guide/license.html>`_
+on their homepage.
 
 All changes of the original project are released under the license specified in this
 project's license file.
