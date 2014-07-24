@@ -10,9 +10,9 @@
  * file that was distributed with this source code or visit the link above.
  */
 
-use Doctrine\ORM\Tools\Setup,
-    Doctrine\ORM\EntityManager,
-    Doctrine\Common\ClassLoader;
+use Doctrine\ORM\Tools\Setup;
+use Doctrine\ORM\EntityManager;
+use Doctrine\Common\ClassLoader;
 
 /**
  * Class Doctrine
@@ -72,7 +72,11 @@ class Doctrine
             SRCPATH . 'Model/Entity'
         );
 
-        $config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $this->devMode, $proxies_dir);
+        $config = Setup::createAnnotationMetadataConfiguration(
+            $metadata_paths,
+            $this->devMode,
+            $proxies_dir
+        );
         $this->em = EntityManager::create($connection_options, $config);
 
         $commonLoader = new ClassLoader('nv\\', SRCPATH);
