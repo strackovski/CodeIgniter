@@ -20,7 +20,7 @@ $config['assets_source_dir'] = 'Assets';
 | to include in your pages (such as css, javascript, images, etc).
 |
 */
-$config['assets_output_dir'] = 'web/assets';
+$config['assets_output_dir'] = 'web/assets/build';
 
 /*
 |--------------------------------------------------------------------------
