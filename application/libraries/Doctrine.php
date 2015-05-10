@@ -60,10 +60,7 @@ class Doctrine
             'user'          => $db['default']['username'],
             'password'      => $db['default']['password'],
             'host'          => $db['default']['hostname'],
-            'dbname'        => $db['default']['database'],
-            'driverOptions' => array(
-                'charset' => $db['default']['char_set'],
-            ),
+            'dbname'        => $db['default']['database']
         );
 
         $proxies_dir      =  FCPATH . 'var/cache/orm/proxy';
